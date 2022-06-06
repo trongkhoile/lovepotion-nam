@@ -1,0 +1,3 @@
+- Hầu hết các biến global được tạo ở obj_next_button
+- Comment chức năng của obj nằm ở event "Create"
+- Thứ tự của event "Draw": draw_self() -> font chữ -> màu chữ -> căn chỉnh -> draw_text()

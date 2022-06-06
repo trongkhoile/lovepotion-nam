@@ -1,0 +1,1 @@
+//FirebaseRealTime().Path("Id/"+global.Id+"/Choice").Set(3);
