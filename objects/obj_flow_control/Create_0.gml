@@ -4,7 +4,7 @@ dialogue_scene = [0, 0, 0, 1, 1, 0, 0, 0]
 choice_scene = [1, 1, 1, 0, 1, 0, 0, 0]
 
 // Danh sách phòng
-rooms = [[0, 3], [4, 7], [8, 24], [25, 30], [31, 38], [39, 58], [59, 63], [64, 75], [76,"*"]]
+bg_config = [[0, 3], [4, 7], [8, 24], [25, 30], [31, 38], [39, 58], [59, 63], [64, 75], [76,"*"]]
 
 // Danh sách cảnh mỗi loại
 scene_types = ds_map_create();
@@ -18,3 +18,34 @@ ds_map_add(scene_types, "dialogue", [1, 2, 4, 5, 6, 7.1, 9, 12, 13, 14,
 								  73, 74, 82, 83, 84])
 ds_map_add(scene_types, "choice", [7, 10, 17, 24, 26, 29, 36, 38, 55, 57,
                                  65, 68, 71, 75, 79, 80])
+								 
+								 
+switch (global.bg) {
+		case 0:
+			change_bg(spr_truonghoc)
+	    break;
+		case 1:
+	        change_bg(spr_phongdungcu)
+	    break;
+	    case 2:
+	        change_bg(spr_phongdungcu)
+	    break;
+	    case 3:
+	        change_bg(spr_phong)
+	    break;
+	    case 4:
+	        change_bg(spr_buoichieu)
+	    break;
+	    case 5:
+	        change_bg(spr_duong)
+	    break;
+	    case 6:
+	        change_bg(spr_rap)
+	    break;
+	    case 7:
+	        change_bg(spr_nhahang)
+	    break;
+	    case 8:
+	        change_bg(spr_truonghoc)
+	    break;
+     }

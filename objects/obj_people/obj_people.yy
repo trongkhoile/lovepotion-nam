@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_nvchinh",
-    "path": "sprites/spr_nvchinh/spr_nvchinh.yy",
+    "name": "m_normal",
+    "path": "sprites/m_normal/m_normal.yy",
   },
   "solid": false,
   "visible": true,

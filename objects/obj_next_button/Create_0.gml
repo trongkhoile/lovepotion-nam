@@ -9,7 +9,7 @@ global.extra_scene = false
 // Phân nhánh cho các lựa chọn
 global.branch = ""
 // Biến id phòng để xác định sẽ đi đến phòng nào sau mỗi cảnh
-global.room = 0
+global.bg = 0
 // Biến chọn phòng cho obj_gotoscene
 global.scene_choice = ""
 // Biến để xác định xem obj nào sẽ visible trong các cảnh
