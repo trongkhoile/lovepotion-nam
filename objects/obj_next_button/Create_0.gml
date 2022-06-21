@@ -1,3 +1,4 @@
+id_error = 0
 // Chuyển sang phòng 1 để bắt đầu game (hầu hết các biến global được khai báo ở đây)
 
 // Biến id cảnh - có chức năng xác định cảnh nào sẽ play

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_name",
-    "path": "sprites/spr_name/spr_name.yy",
+    "name": "spr_name_inactive",
+    "path": "sprites/spr_name_inactive/spr_name_inactive.yy",
   },
   "solid": false,
   "visible": true,

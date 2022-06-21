@@ -4,7 +4,7 @@ draw_set_font(Times_New_Roman)
 draw_set_color(c_black)
 draw_set_valign(fa_middle)
 // Set dòng chữ cho mỗi cảnh
-switch (global.scene) {
+/* switch (global.scene) {
 	case 7:
 		text = "Bạn sẽ làm gì trong tình huống này"
 	break;
@@ -69,7 +69,8 @@ switch (global.scene) {
 		text = "Bạn sẽ làm gì trong tình huống này?"
 	break;
 }
+ */
+
 // Viết chữ (thay bằng hàm viết chữ chạy khi code được)
 draw_text_ext(x,y,text,25,sprite_width - 48)
 
-FirebaseRealTime().Path("script/"+"choice/"+ string(global.scene) + "/dialogue").Set(text);

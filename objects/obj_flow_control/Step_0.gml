@@ -42,7 +42,7 @@ if (global.scene_change == true) {
     else {
 		 room_goto(layout_2)
     }  
-    
+     
 	global.visibility = scene_type(global.scene)
 	
 	switch (global.scene) {

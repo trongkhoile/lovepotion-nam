@@ -65,5 +65,5 @@ switch (global.scene) {
 	    FirebaseRealTime().Path("id/"+global.id+"/chang-5"+"/4").Set("B") ;
 		break;
 }
-FirebaseRealTime().Path("script/"+"choice/"+ string(global.scene) + "/choice2").Set(text);
+	
 global.scene_change = true

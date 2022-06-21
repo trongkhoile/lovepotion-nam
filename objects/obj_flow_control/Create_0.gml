@@ -19,7 +19,7 @@ ds_map_add(scene_types, "dialogue", [1, 2, 4, 5, 6, 7.1, 9, 12, 13, 14,
 ds_map_add(scene_types, "choice", [7, 10, 17, 24, 26, 29, 36, 38, 55, 57,
                                  65, 68, 71, 75, 79, 80])
 								 
-								 
+// Chỉnh bg ngay đây tránh bị lỗi		 
 switch (global.bg) {
 		case 0:
 			change_bg(spr_truonghoc)
@@ -49,3 +49,5 @@ switch (global.bg) {
 	        change_bg(spr_truonghoc)
 	    break;
      }
+// Reset 
+global.choice_read_sequence = 0
