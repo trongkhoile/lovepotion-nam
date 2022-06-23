@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_phong","path":"sprites/spr_phong/spr_phong.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_phong",
     "tags": [],
     "resourceType": "GMSequence",

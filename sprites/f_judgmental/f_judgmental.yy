@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"f_judgmental","path":"sprites/f_judgmental/f_judgmental.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "f_judgmental",
     "tags": [],
     "resourceType": "GMSequence",

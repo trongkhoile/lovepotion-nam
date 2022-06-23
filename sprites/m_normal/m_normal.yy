@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"m_normal","path":"sprites/m_normal/m_normal.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "m_normal",
     "tags": [],
     "resourceType": "GMSequence",

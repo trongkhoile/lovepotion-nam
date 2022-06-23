@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_rap","path":"sprites/spr_rap/spr_rap.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_rap",
     "tags": [],
     "resourceType": "GMSequence",

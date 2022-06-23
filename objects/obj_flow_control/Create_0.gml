@@ -49,5 +49,10 @@ switch (global.bg) {
 	        change_bg(spr_truonghoc)
 	    break;
      }
-// Reset 
-global.choice_read_sequence = 0
+	
+// Export ra file
+global.data = {}
+variable_struct_set(global.data, string(global.scene),"This is scene " + string(global.scene))
+export_json("data.txt", global.data, json_stringify)	
+
+

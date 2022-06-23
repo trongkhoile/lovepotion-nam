@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"m_talking","path":"sprites/m_talking/m_talking.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "m_talking",
     "tags": [],
     "resourceType": "GMSequence",

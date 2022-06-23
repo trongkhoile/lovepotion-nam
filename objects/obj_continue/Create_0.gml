@@ -5,4 +5,4 @@ state_code = 0
 flicker = 0
 
 // Bắt đầu nhấp nháy sau 5 giây
-alarm[1] = fps*5
+alarm[1] = fps*60

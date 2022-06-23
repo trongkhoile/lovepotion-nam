@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"m_blush","path":"sprites/m_blush/m_blush.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "m_blush",
     "tags": [],
     "resourceType": "GMSequence",

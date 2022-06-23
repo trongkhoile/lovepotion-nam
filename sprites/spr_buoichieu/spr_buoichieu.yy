@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_buoichieu","path":"sprites/spr_buoichieu/spr_buoichieu.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_buoichieu",
     "tags": [],
     "resourceType": "GMSequence",

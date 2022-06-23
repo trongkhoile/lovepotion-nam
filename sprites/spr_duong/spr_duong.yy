@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_duong","path":"sprites/spr_duong/spr_duong.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_duong",
     "tags": [],
     "resourceType": "GMSequence",

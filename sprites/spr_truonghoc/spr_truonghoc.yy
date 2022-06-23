@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_truonghoc","path":"sprites/spr_truonghoc/spr_truonghoc.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_truonghoc",
     "tags": [],
     "resourceType": "GMSequence",

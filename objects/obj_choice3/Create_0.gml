@@ -2,4 +2,4 @@
 text = ""
 visible = global.visibility[6]
 
-listener_id = FirebaseRealTime().Path("script/"+"choice/"+ string(global.scene) + "/choice3").Read()
+// listener_id = FirebaseRealTime().Path("script/"+"choice/"+ string(global.scene) + "/choice3").Read()

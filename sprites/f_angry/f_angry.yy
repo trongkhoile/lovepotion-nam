@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"f_angry","path":"sprites/f_angry/f_angry.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "f_angry",
     "tags": [],
     "resourceType": "GMSequence",

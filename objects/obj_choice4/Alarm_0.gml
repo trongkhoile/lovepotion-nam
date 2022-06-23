@@ -6,5 +6,4 @@ switch (global.scene) {
 		break;
 }
 
-FirebaseRealTime().Path("script/"+"choice/"+ string(global.scene) + "/choice4").Set(text);
 global.scene_change = true

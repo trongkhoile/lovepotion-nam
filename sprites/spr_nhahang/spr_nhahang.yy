@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_nhahang","path":"sprites/spr_nhahang/spr_nhahang.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_nhahang",
     "tags": [],
     "resourceType": "GMSequence",

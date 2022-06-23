@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"m_annoyed","path":"sprites/m_annoyed/m_annoyed.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "m_annoyed",
     "tags": [],
     "resourceType": "GMSequence",

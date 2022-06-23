@@ -18,5 +18,4 @@ switch (global.scene) {
 		break;
 }
 
-
 global.scene_change = true

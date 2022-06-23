@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_continue","path":"sprites/spr_continue/spr_continue.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_continue",
     "tags": [],
     "resourceType": "GMSequence",

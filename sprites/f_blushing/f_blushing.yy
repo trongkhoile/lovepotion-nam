@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"f_blushing","path":"sprites/f_blushing/f_blushing.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "f_blushing",
     "tags": [],
     "resourceType": "GMSequence",

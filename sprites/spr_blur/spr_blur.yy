@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_blur","path":"sprites/spr_blur/spr_blur.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_blur",
     "tags": [],
     "resourceType": "GMSequence",

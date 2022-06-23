@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_banhocB","path":"sprites/spr_banhocB/spr_banhocB.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_banhocB",
     "tags": [],
     "resourceType": "GMSequence",

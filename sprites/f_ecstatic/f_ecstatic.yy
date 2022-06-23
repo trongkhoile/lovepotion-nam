@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"f_ecstatic","path":"sprites/f_ecstatic/f_ecstatic.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "f_ecstatic",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"m_sweaty","path":"sprites/m_sweaty/m_sweaty.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "m_sweaty",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_phongdungcu","path":"sprites/spr_phongdungcu/spr_phongdungcu.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_phongdungcu",
     "tags": [],
     "resourceType": "GMSequence",
