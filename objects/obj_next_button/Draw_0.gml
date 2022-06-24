@@ -1,17 +1,15 @@
-draw_set_color(c_yellow)
+draw_set_color(c_white)
 
 if id_error == 1 {
 	draw_self()
-	draw_text(x-300, y-200, "Lỗi: tên người chơi không được bỏ trống")
-}
-else {
-	draw_self()
+	draw_text(obj_name.x,obj_name.y+50, "Lỗi: id người chơi không được bỏ trống")
 }
 
 if id_error == 2 {
 	draw_self()
-	draw_text(x-300, y-200, "Lỗi: tên người chơi đã tồn tại trên hệ thống")
+	draw_text(obj_name.x,obj_name.y+50, "Lỗi: id người chơi đã tồn tại trên hệ thống")
 }
+
 else {
 	draw_self()
 }

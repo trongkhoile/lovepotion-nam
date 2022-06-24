@@ -1,7 +1,17 @@
+if mouse_check_button(mb_left) {
+	alarm[0] = room_speed * 0.1
+}
+
 if input == 1 {
-sprite_index = spr_name
-if(keyboard_check(vk_anykey) && string_length(global.id)<sprite_width/10*0.9){
-	global.id += string(keyboard_string)
+
+// Vị trí con trỏ (ở trên hàm xóa vì cần sử dụng)
+if default_cursor_pos == true {
+cursor_pos = string_length(global.id) + 1
+}
+
+// Hàm xóa 
+if(keyboard_check(vk_anykey) && string_length(global.id)<15){
+	global.id += keyboard_string
 	keyboard_string = ""
 }
 
@@ -21,9 +31,40 @@ if(delete_timer!=2){
 	delete_timer ++
 } 
 
+// Make the cursor blink
+if wait = 0 {
+	  if state_code < 4 {
+	      state_code += 1
+	  }
+      else {
+		  state_code -= 4
+	  }
+	  
+	  switch state_code {
+            case 1: 
+			cursor = "|"
+			break;
+            case 2: 
+			wait = fps * 0.5
+			break;
+            case 3: 
+			cursor = " "
+			break;
+			case 4: 
+			wait = fps * 0.5
+			break;
+      }
+  }  
+  
+  else {
+      wait -= 1
+  }
+
 }
 
-else {
-sprite_index = spr_name_inactive
-keyboard_string = ""
+if input == 0 {
+	keyboard_string = ""
 }
+
+
+

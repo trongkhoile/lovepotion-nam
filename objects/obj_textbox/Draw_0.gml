@@ -2,11 +2,12 @@ draw_self()
 // Chỉnh phông, màu, cách sắp xếp của chữ
 draw_set_font(Times_New_Roman)
 draw_set_color(c_black)
-draw_set_valign(fa_middle)
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
 // Set dòng chữ cho mỗi cảnh
 switch (global.scene) {
 	case 0:
-	    text = @"Hôm nay là một ngày trời quang mây tạnh trường của bạn đã quyết định tận dụng ngày đẹp trời này để làm một buổi tổng duyệt cho vũ hội sắp tới. Với trách nhiệm là 1 đàn anh lớn trong trường thì bạn đã tới để sắp xếp và chuẩn bị cho buổi vũ hội lần này. Công việc chỉ là bưng bê đồ và bạn thì cũng chạy qua chạy lại khá nhiều chỗ để chuẩn bị cho công tác chuẩn bị."
+	    text = @"Hôm nay là một ngày trời quang mây tạnh trường của bạn đã quyết định tận dụng ngày đẹp trời này để làm một buổi tổng duyệt cho vũ hội sắp tới. Với trách nhiệm là 1 đàn anh lớn trong trường thì bạn đã tới để sắp xếp và chuẩn bị cho buổi vũ hội lần này. Công việc chỉ là bưng bê đồ và bạn thì cũng chạy qua chạy lại khá nhiều chỗ phục vụ cho công tác chuẩn bị."
 	break;
 	case 3:
 	    text = @"Sau đó bạn liền đi tới khu nhà đựng dụng cụ để phụ giúp. Cùng tiến tới khu nhà đó chính là (tên nữ chính) - hậu bối của bạn, người mà bạn đã có khoảng thời gian làm việc khá lâu và cũng khá thân thiết."
@@ -97,4 +98,5 @@ Hôm nay là buổi hẹn hò thường ngày mà bạn và cô ấy đã lên k
 }
 
 // Viết chữ (thay bằng hàm viết chữ chạy khi code được)	
-draw_text_scrolling(x, y, text, 0.3,fps*0.5,undefined, 25,sprite_width-48)
+global.can_continue = false
+draw_text_scrolling(x, y, text, 0.3,fps*0.5,undefined, 25,sprite_width-60)

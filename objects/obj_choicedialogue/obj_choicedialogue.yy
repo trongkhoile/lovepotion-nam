@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_textbox",
-    "path": "sprites/spr_textbox/spr_textbox.yy",
+    "name": "spr_dialogue",
+    "path": "sprites/spr_dialogue/spr_dialogue.yy",
   },
   "solid": false,
   "visible": true,

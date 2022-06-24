@@ -1,15 +1,18 @@
 draw_self()
+
 // Chỉnh phông, màu, cách sắp xếp của chữ
 draw_set_font(Times_New_Roman)
 draw_set_color(c_black)
-draw_set_valign(fa_middle)
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
+
 // Set dòng chữ cho mỗi cảnh
 switch (global.scene) {
 	case 1:
-		text = "*!Đằng kia có vẻ có các hậu bối nhờ giúp đỡ, chạy qua đó thử xem nhé"
+		text = "* !Đằng kia có vẻ có các hậu bối nhờ giúp đỡ, chạy qua đó thử xem nhé"
 	break;
 	case 2:
-		text = "Đúng đó!*, cậu qua phía bên này phụ giúp bưng bê 1 số đồ lớn đi nhé!!"
+		text = "Đúng đó!* , cậu qua phía bên này phụ giúp bưng bê 1 số đồ lớn đi nhé!!"
 	break;
 	case 4:
 		text = "A là anh sao, hôm nay anh cũng đến đây như vậy à"
@@ -133,5 +136,7 @@ switch (global.scene) {
 	break;
 
 }
+
 // Viết chữ (thay bằng hàm viết chữ chạy khi code được)
-draw_text_scrolling(x, y, text, 0.3,fps*0.5,undefined, 25,sprite_width-48)
+global.can_continue = false
+draw_text_scrolling(x, y, string_replace(text,"*", global.id), 0.3,fps*0.5,undefined, 25,sprite_width-48)

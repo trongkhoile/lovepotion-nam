@@ -1,3 +1,7 @@
+if keyboard_check(vk_enter or vk_space) {
+	alarm[0] = room_speed*0.1
+}
+
 if flicker == 1 {
  
  if wait = 0 {
