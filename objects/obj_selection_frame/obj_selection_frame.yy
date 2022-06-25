@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "gameplay",
-    "path": "folders/Objects/gameplay.yy",
+    "name": "Choices",
+    "path": "folders/Objects/gameplay/Choices.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_selection_frame",

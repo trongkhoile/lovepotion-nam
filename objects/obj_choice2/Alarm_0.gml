@@ -65,5 +65,5 @@ switch (global.scene) {
 	    FirebaseRealTime().Path("id/"+global.id+"/chang-5"+"/4").Set("B") ;
 		break;
 }
-	
+FirebaseRealTime().ListenerRemoveAll()
 global.scene_change = true

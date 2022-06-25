@@ -99,4 +99,6 @@ Hôm nay là buổi hẹn hò thường ngày mà bạn và cô ấy đã lên k
 
 // Viết chữ (thay bằng hàm viết chữ chạy khi code được)	
 global.can_continue = false
+
 draw_text_scrolling(x, y, text, 0.3,fps*0.5,undefined, 25,sprite_width-60)
+

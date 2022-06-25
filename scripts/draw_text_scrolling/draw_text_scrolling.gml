@@ -92,7 +92,9 @@ function draw_text_scrolling(text_x, text_y, text_str, text_spd, text_slp, text_
 	}
  
 	//Draws the scrolling text.
+	if global.pause == 0 {
 	draw_text_ext(text_x, text_y, string_copy(text_str, 1, text_ind),line_break,width);
+	}
     if string_length(string_copy(text_str, 1, text_ind)) == string_length(text_str) {
 		global.can_continue = true
 	}

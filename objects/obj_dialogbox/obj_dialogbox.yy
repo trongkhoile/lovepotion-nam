@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "gameplay",
-    "path": "folders/Objects/gameplay.yy",
+    "name": "Dialogue",
+    "path": "folders/Objects/gameplay/Dialogue.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_dialogbox",

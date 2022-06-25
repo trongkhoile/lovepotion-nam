@@ -1,13 +1,8 @@
-if mouse_check_button(mb_left) {
+if mouse_check_button(mb_left) and is_touching_mouse(self) {
 	alarm[0] = room_speed * 0.1
 }
 
 if input == 1 {
-
-// Vị trí con trỏ (ở trên hàm xóa vì cần sử dụng)
-if default_cursor_pos == true {
-cursor_pos = string_length(global.id) + 1
-}
 
 // Hàm xóa 
 if(keyboard_check(vk_anykey) && string_length(global.id)<15){
@@ -64,6 +59,7 @@ if wait = 0 {
 
 if input == 0 {
 	keyboard_string = ""
+	cursor = ""
 }
 
 

@@ -15,3 +15,7 @@ global.bg = 0
 global.scene_choice = ""
 // Biến để xác định xem obj nào sẽ visible trong các cảnh
 global.visibility = []
+// Biến âm lượng:
+global.music_volume = 100
+// Biến âm lượng:
+global.sound_volume = 100

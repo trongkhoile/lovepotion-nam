@@ -90,3 +90,5 @@ if (global.scene_change == true) {
 }
 
 global.scene_change = false
+// Test âm thanh
+audio_sound_gain(snd_maintheme, global.music_volume/100, 0)

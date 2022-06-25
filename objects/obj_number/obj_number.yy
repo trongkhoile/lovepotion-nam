@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "functions",
-    "path": "folders/Objects/functions.yy",
+    "name": "Debug",
+    "path": "folders/Objects/functions/Debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_number",

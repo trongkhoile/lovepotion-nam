@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "functions",
-    "path": "folders/Sprites/functions.yy",
+    "name": "Game progression",
+    "path": "folders/Sprites/functions/Game progression.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_next",

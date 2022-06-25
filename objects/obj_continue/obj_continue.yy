@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "functions",
-    "path": "folders/Objects/functions.yy",
+    "name": "Game progression",
+    "path": "folders/Objects/functions/Game progression.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_continue",

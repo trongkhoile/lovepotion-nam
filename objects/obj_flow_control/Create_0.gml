@@ -53,6 +53,5 @@ switch (global.bg) {
 // Export ra file
 global.data = {}
 variable_struct_set(global.data, string(global.scene),"This is scene " + string(global.scene))
-export_json("data.txt", global.data, json_stringify)	
-
+export_json("data.txt", global.data, json_stringify)
 
