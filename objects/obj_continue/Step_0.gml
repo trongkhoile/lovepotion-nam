@@ -1,8 +1,11 @@
-if keyboard_check(vk_enter or vk_space) {
-	alarm[0] = room_speed*0.1
+if keyboard_check(vk_enter) or keyboard_check(vk_space) {
+	// && global.can_continue == true
+    if (global.vis[0] == 0 )  {
+	    global.scene_change = true
+}
 }
 
-if flicker == 1 {
+if flicker == 1 and global.pause == false {
  
  if wait = 0 {
       
@@ -18,13 +21,13 @@ if flicker == 1 {
 			visible = 0
 			break;
             case 2: 
-			wait = fps * 0.75
+			wait = 30
 			break;
 			case 3: 
 			visible = 1
 			break;
 			case 4: 
-			wait = fps * 0.75
+			wait = 30
 			break;
       }
   }  

@@ -1,4 +1,5 @@
 draw_self()
 if is_touching_mouse(self) {
-	draw_text(mouse_x, mouse_y + 50, "Thoát về màn hình chính")
+	draw_set_halign(fa_left)
+	draw_text(x+sprite_width/2 + 10, y, text)
 }

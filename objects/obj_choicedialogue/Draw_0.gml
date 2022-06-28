@@ -2,7 +2,7 @@ draw_self()
 // Chỉnh phông, màu, cách sắp xếp của chữ
 draw_set_font(Times_New_Roman)
 draw_set_color(c_black)
-draw_set_valign(fa_top)
+draw_set_valign(fa_middle)
 draw_set_halign(fa_left)
 // Set dòng chữ cho mỗi cảnh
 switch (global.scene) {
@@ -71,6 +71,17 @@ switch (global.scene) {
 	break;
 }
 
-// Viết chữ (thay bằng hàm viết chữ chạy khi code được)
-draw_text_scrolling(x, y, text, 0.3,fps*0.5,undefined, 25,sprite_width-48)
+if global.vis[0] == 1 {
+	if global.mode == 1{
+	     variable_struct_set(global.choice_data, "dialogue", text)
+	     global.can_continue = false
+         draw_text_scrolling(x-(1/2 - mar_x)*sprite_width, y - font_get_size(Times_New_Roman)*0.4, text, 0.5,30,undefined, 25, (1-mar_x*2)*sprite_width)
+	}
+	else {
+		text = variable_struct_get(global.choice_data, "dialogue")
+		// Viết chữ
+        global.can_continue = false
+        draw_text_scrolling(x-(1/2 - mar_x)*sprite_width, y - font_get_size(Times_New_Roman)*0.4, text, 0.5,30,undefined, 25, (1-mar_x*2)*sprite_width)
+	}
+}
 

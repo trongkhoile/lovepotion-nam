@@ -9,7 +9,7 @@ cursor = "|"
 
 // Vị trí con trỏ
 cursor_pos = 0
-
+default_pos = true
 // Delay tối thiểu giữa các ký tự
 min_delay = 0.5
 

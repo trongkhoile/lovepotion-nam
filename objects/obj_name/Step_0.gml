@@ -1,32 +1,69 @@
-if mouse_check_button(mb_left) and is_touching_mouse(self) {
+if mouse_check_button_pressed(mb_left) and is_touching_mouse(self) {
 	alarm[0] = room_speed * 0.1
 }
 
+
+
 if input == 1 {
 
-// Hàm xóa 
-if(keyboard_check(vk_anykey) && string_length(global.id)<15){
-	global.id += keyboard_string
-	keyboard_string = ""
+if default_pos == true {
+	cursor_pos = string_length(global.id) + 1
 }
 
-if(keyboard_check(vk_backspace) && keyboard_check_pressed(vk_backspace) && delete_timer == 2){
-	global.id = string_delete(global.id, string_length(global.id), 1)
+// Hàm nhập
+if keyboard_check_pressed(vk_anykey) && string_length(global.id)<15 && !keyboard_check_keys([vk_left, vk_right, vk_backspace, vk_delete]){
+	global.id = string_insert(keyboard_string, global.id, cursor_pos)
+	cursor_pos ++ 
+	keyboard_string = ""
+}
+// Hàm xóa 
+if(keyboard_check(vk_backspace) && delete_timer == 5){
+	global.id = string_delete(global.id, cursor_pos - 1, 1)
+	cursor_pos -= 1
 	delete_timer = 0
 	keyboard_string = ""
 }
 
 if(keyboard_check_pressed(vk_backspace)) {
-	global.id = string_delete(global.id, string_length(global.id), 1)
 	keyboard_string = ""
-	delete_timer = -4
+	delete_timer = -5
+}
+// Xóa bằng delete
+if(keyboard_check(vk_delete) && delete_timer == 5){
+	global.id = string_delete(global.id, cursor_pos, 1)
+	delete_timer = 0
+	keyboard_string = ""
+}
+	
+if(keyboard_check_pressed(vk_delete)) {
+	keyboard_string = ""
+	delete_timer = -5
 }
 
-if(delete_timer!=2){
+if(delete_timer!=5){
 	delete_timer ++
 } 
-
-// Make the cursor blink
+	
+// Di chuyển con trỏ chuột
+if keyboard_check_pressed(vk_right) {
+	default_pos = false
+	if cursor_pos >= string_length(global.id) + 1 {
+		cursor_pos = 0
+	}
+    else {
+		cursor_pos ++
+	}
+}
+if keyboard_check_pressed(vk_left) {
+	default_pos = false
+	if cursor_pos <= 0 {
+		cursor_pos = string_length(global.id) + 1
+	}
+    else {
+		cursor_pos -= 1
+	}
+}
+// Làm trỏ chuột nhấp nháy
 if wait = 0 {
 	  if state_code < 4 {
 	      state_code += 1
@@ -40,13 +77,13 @@ if wait = 0 {
 			cursor = "|"
 			break;
             case 2: 
-			wait = fps * 0.5
+			wait = 30
 			break;
             case 3: 
 			cursor = " "
 			break;
 			case 4: 
-			wait = fps * 0.5
+			wait = 30
 			break;
       }
   }  
@@ -54,7 +91,6 @@ if wait = 0 {
   else {
       wait -= 1
   }
-
 }
 
 if input == 0 {

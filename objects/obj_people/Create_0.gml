@@ -2,7 +2,7 @@
 name = ""
 spr = 0
 
-visible = global.visibility[4]
+visible = global.vis[4]
 
 switch (global.scene) {
 	case 1:
@@ -133,4 +133,17 @@ switch (global.scene) {
 	break;
 	}
 
-sprite_index = spr
+
+
+if global.vis[4] == 1 {
+	if global.mode == 1{
+	variable_struct_set(global.scene_data, "sprite", spr)
+	sprite_index = spr
+	}
+	else {
+		spr = variable_struct_get(global.scene_data, "sprite")
+		sprite_index = spr
+	}
+}
+
+

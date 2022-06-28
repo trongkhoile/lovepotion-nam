@@ -14,8 +14,18 @@ global.bg = 0
 // Biến chọn phòng cho obj_gotoscene
 global.scene_choice = ""
 // Biến để xác định xem obj nào sẽ visible trong các cảnh
-global.visibility = []
+global.vis = []
+// Biến dữ liệu
+global.data = {}
+// Biến dữ liệu nhánh
+global.branch_data = {}
+// Biến dự liệu cảnh
+global.scene_data = {}
+// Biến dữ liệu lựa chọn
+global.choice_data = {}
+// Biến mode
+global.mode = 0
 // Biến âm lượng:
-global.music_volume = 100
+global.music_volume = 0
 // Biến âm lượng:
 global.sound_volume = 100

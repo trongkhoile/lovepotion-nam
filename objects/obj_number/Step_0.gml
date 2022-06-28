@@ -12,7 +12,7 @@ if wait = 0 {
 			val ++	
 			break;
             case 2: 
-			wait = fps*0.5
+			wait = 30
 			break;
       }
 } else {

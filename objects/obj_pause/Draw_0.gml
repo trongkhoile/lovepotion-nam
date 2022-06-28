@@ -10,7 +10,7 @@ if global.pause == true {
 	}
 
 	// Thanh 1:
-	draw_sprite(spr_slider_bar_empty, -1, 760, 485)
+	draw_sprite(spr_slider_bar_empty, -1, 445, 390)
 	// Thanh 2:
-	draw_sprite(spr_slider_bar_empty, -1, 760, 540)
+	draw_sprite(spr_slider_bar_empty, -1, 445, 445)
 }

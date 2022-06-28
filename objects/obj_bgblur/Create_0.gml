@@ -1,5 +1,5 @@
 // Tạo tấm phủ màn hình
-if array_equals(global.visibility, [0, 0, 0, 0, 0, 1, 0, 0]) {
+if global.vis[5] == 1 {
 	visible = 0
 }
 else {
