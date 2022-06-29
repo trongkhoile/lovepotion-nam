@@ -4,7 +4,7 @@ dialogue_scene = [0, 0, 0, 1, 1, 0, 0, 0]
 choice_scene = [1, 1, 1, 0, 1, 0, 0, 0]
 
 // Danh sách phòng
-rm_config = [[0, 3], [4, 7], [8, 24], [25, 30], [31, 38], [39, 58], [59, 63], [64, 75], [76,"*"]]
+bg_config = [[0, 3], [4, 7], [8, 24], [25, 30], [31, 38], [39, 58], [59, 63], [64, 75], [76,"*"]]
 
 // Danh sách cảnh mỗi loại
 scene_types = ds_map_create();
@@ -50,9 +50,6 @@ switch (global.bg) {
 	    break;
      }
 
-// Số nhánh
-max_branch = 1
-
 // Export ra file
 // Thêm các dữ liệu cơ bản của game
 if global.mode == 1 {
@@ -68,12 +65,15 @@ if global.vis[0] == 1 {
 
 
 // Thêm các dữ liệu cảnh
-variable_struct_set(global.data, string(global.scene)+"_"+string(global.branch), global.scene_data)
+variable_struct_set(global.data, string(global.scene)+ "_" + string(global.branch), global.scene_data)
 export_json("data.json", global.data, json_stringify)
 }	
 
 if global.mode == 0 {
-	global.scene_data = variable_struct_get(global.data, string(global.scene) + "_" + string(global.branch))
+	if global.scene == 0 {
+	global.scene_data = variable_struct_get(global.data,  string(global.scene)+ "_" + string(global.branch))
+	}
+	
 	if global.vis[0] == 1 {
 		global.choice_data = variable_struct_get(global.scene_data, "choice")
 	}

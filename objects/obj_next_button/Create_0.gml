@@ -17,8 +17,6 @@ global.scene_choice = ""
 global.vis = []
 // Biến dữ liệu
 global.data = {}
-// Biến dữ liệu nhánh
-global.branch_data = {}
 // Biến dự liệu cảnh
 global.scene_data = {}
 // Biến dữ liệu lựa chọn

@@ -32,5 +32,5 @@ switch(global.branch) {
 }
 
 if keyboard_check_pressed(vk_enter) {
-	alarm[0] = room_speed*0.1
+	global.scene_change = true
 }

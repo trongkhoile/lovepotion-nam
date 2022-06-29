@@ -9,7 +9,7 @@ if id_error == 0 {
 	}
 	// Load dữ liệu khi người chơi vào game
 	if global.mode == 0 or global.mode == 1 {
-	global.data = import_json("data.json", json_parse)
+	global.data = import_json("script.json", json_parse)
 	}
 	FirebaseRealTime().ListenerRemove(listener_id)
 }
